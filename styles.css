@@ -52,25 +52,25 @@ p {
   margin-bottom: 3.5rem;
 }
 
-.arrow_Down {
-  position: relative;
-  width: 6rem;
-  height: fit-content;
-}
-
 .arrow {
-  position: absolute;
-  width: 2.9rem;
-  height: 4.5rem;
-  top: 30%;
-  right: 25%;
-  display: block;
+  width: 5.8rem;
+  height: 10.5rem;
+  border: 4px solid var(--accent-color);
+  border-radius: 76rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  transition: filter 300ms;
 }
 
-.arrow_Down:hover{
+.arrow img {
+  width: 3rem;
+}
+
+.arrow:hover{
   filter: brightness(0.7);
 }
-
 
 section{
   background: var(--gradient-background);
@@ -105,6 +105,8 @@ section{
   color: var(--text-base-color);
   text-align: left;
   width: 26.5rem;
+  display: block;
+  width: 100%;
 }
 
 #my-form {
@@ -174,4 +176,64 @@ footer p{
   line-height: 2.4rem;
   font-weight: 600;
   text-align: center;
+}
+
+
+@media (min-width: 1200px) {
+  header {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 0 3.9rem 10.3rem;
+    max-height:  83.6rem;
+  }
+
+  .titulo {
+    margin-top: 15.2rem;
+  }
+
+  h1{
+    font-size: 5.2rem;
+    line-height: 7.3rem;
+    margin: 0 0 0.8rem;
+  }
+
+  .titulo p {
+    font-size: 3.1rem;
+    line-height: 4rem;
+    margin-bottom: 17.9rem;
+    letter-spacing:.05rem;
+  }
+
+  .arrow{
+    margin: 0;
+    justify-self: flex-end;
+}
+
+section{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6rem;
+    padding: 6.4rem 11.1rem 8rem;
+}
+
+.card{
+  border-radius: 2.4rem;
+}
+
+.card img{
+  width: 9.7rem;
+  margin-bottom: 4rem;
+}
+
+#my-form{
+  background: url(./img/image\ 11976.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+  input, textarea{
+  width: 50%;
+
+}
 }
