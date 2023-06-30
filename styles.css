@@ -30,6 +30,16 @@ header{
 
 header img {
   width: 100%;
+
+  animation-name: topDown;
+  animation-delay: 200ms;
+  animation-duration: 700ms;
+}
+
+.titulo {
+  animation-name: downTop;
+  animation-delay: 200ms;
+  animation-duration: 700ms;
 }
 
 h1 {
@@ -83,11 +93,36 @@ section{
   background: var(--white);
   padding: 2.2rem;
   border-radius: 2rem;
+
+  animation-name: topDown;
+  animation-delay: 200ms;
+  animation-duration: 700ms;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.1) ;
+    transition-duration: 700ms;
 }
 
 .card img {
   width: 8rem;
   margin-bottom: 3.3rem;
+
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.card img:hover {
+  animation-play-state: paused;
 }
 
 .card h2 {
@@ -126,7 +161,23 @@ legend {
 
 .input-wrapper{
   margin-bottom: 2.4rem;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+
+.input-icon i {
+  font-size: 20px;
+  color: var(--accent-color);
+}
+
 
 input, textarea{
   width: 100%;
@@ -145,7 +196,7 @@ input::placeholder, textarea::placeholder{
 }
 
 input::placeholder {
-  padding-left: 2.8rem;
+  padding-left: 3rem;
 }
 
 button {
@@ -177,6 +228,32 @@ footer p{
   font-weight: 600;
   text-align: center;
 }
+
+/* KEYFRAMES DAS ANIMAÇÕES */
+
+@keyframes topDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-15px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+@keyframes downTop {
+        0% {
+            opacity: 0;
+            transform: translateY(+15px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 
 
 @media (min-width: 1200px) {
