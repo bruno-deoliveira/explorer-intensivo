@@ -7,7 +7,7 @@
 
 
 ## 💻 Projeto
-Projeto do intensivão que envolve o máximo de conteúdo visto nos stages iniciais - Explore Rocketseat
+Projeto do intensivão que envolve o máximo de conteúdo visto nos stages iniciais - Explore Rocketseat.
 
 Nesse desafio, foi recriado uma aplicação, a partir de um layout pronto no Figma, para fortalecer alguns conceitos aprendidos:
 - Estruturação do projeto HTML;
